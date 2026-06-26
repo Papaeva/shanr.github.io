@@ -25,6 +25,7 @@
     color: var(--text-dark);
     line-height: 1.5;
     word-wrap: break-word;
+    scroll-behavior: smooth;
 }
 
   img {
@@ -202,7 +203,7 @@
     gap: 1.5rem;
   }
 
-  .visually-hidden {
+  /* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -210,7 +211,7 @@
     padding: 0;
     overflow: hidden;
     border: 0;
-  }
+  } */
 
   .feature {
     background-color: var(--card-bg);
@@ -222,7 +223,7 @@
   }
 
   .feature:hover {
-    border-left-color: var(--accent);
+    border-left-color: var(--hover-gold);
   }
 
   .feature h2 {
@@ -236,10 +237,38 @@
     color: var(--text-light);
     line-height: 1.4;
   }
-  .disclaimer {
-    color: #767F9E;
+  
+  /* Отзывы */
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax280px, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
   }
 
+  .review-card {
+    background: var(--card-bg);
+    padding: 1.8rem;
+    border-radius: 24px;
+    transition: 0.3s;
+    border-left: 6px solid var(--gold);
+    list-style: none;
+  }
+
+  .review-card:hover {
+    border-color: var(--hover-gold);
+  }
+
+  .review-text {
+    font-style: italic;
+    margin: 1rem 0;
+    color: var(--text-light);
+  }
+  .review-name {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--accent);
+  }
     /* footer */
   .page-footer {
     background-color: var(--accent);
@@ -274,6 +303,41 @@
     color: var(--gold);
     font-size: 0.75rem;
     margin: 0;
+  }
+
+  .top-link {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: var(--gold);
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 15px var(--hover-gold);
+    transition: background 0.3s, transform 0.2s, opacity 0.3s;
+    opacity: 0; /* по умолчанию скрыта */
+    pointer-events: none; /* чтобы не мешала кликам, пока скрыта */
+    z-index: 999;
+  }
+  .top-link:hover {
+    background: var(--hover-gold);
+    transform: scale(1.1);
+  }
+
+  .top-link:active {
+    transform: scale(0.95);
+  }
+
+  /* Если используете стрелку-символ, можно задать размер */
+  .top-link span {
+    line-height: 1;
   }
 
   @media (max-width: 900px) {

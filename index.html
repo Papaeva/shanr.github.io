@@ -16,21 +16,21 @@
     <nav class="nav-menu" id="navLinks">
       
       <ul>
-        <a href="#" class="logo"><img src="img/SHANR.svg" alt="logo"></a>
+        <a href="#home" class="logo"><img src="img/SHANR.svg" alt="logo"></a>
         <li>
           <a href="#">О мастере</a>
         </li>
         <li>
-          <a href="#">Актуальные коллекции</a>
+          <a href="#collections">Мои коллекции</a>
         </li>
         <li>
-          <a href="#">Пошив на заказ</a>
+          <a href="#about">Пошив на заказ</a>
         </li>
         <li>
-          <a href="#">Отзывы</a>
+          <a href="#reviews">Отзывы</a>
         </li>
         <li>
-          <a href="#btn">Связаться</a>
+          <a href="#home">Связаться</a>
         </li>
       </ul>
       <button class="hamburger">☰</button>
@@ -41,7 +41,7 @@
 
   <!-- main -->
    <main class="page-main">
-    <section class="wrapper">
+    <section id="home" class="wrapper">
 
       <div class="bio">
         <h2 class="inner-heading">О мастере</h2>
@@ -61,8 +61,8 @@
       
     </section>
 
-    <section>
-      <h2 id="my-job">Актуальные коллекции</h2>
+    <section id="collections">
+      <h2 id="my-job">Мои коллекции</h2>
      
       <div class="cards">
         <ul class="cards-list">
@@ -75,22 +75,22 @@
             <p>В составе жюри</p>
           </li>
           <li class="card">
-            <img src="img/foto3.jpg" alt="Конь">
+            <img src="img/foto3.jpg" alt="">
             <p>Мероприятие</p>
 
           </li>
           <li class="card">
-            <img src="img/foto4.jpg" alt="Хомяк">
+            <img src="img/foto4.jpg" alt="">
             <p>Мои друзья</p>
           </li>
 
           <li class="card">
-            <img src="img/foto5.jpg" alt="Озеро Байкал">
+            <img src="img/foto5.jpg" alt="">
             <p>Участие в международном конкурсе</p>
           </li>
 
           <li class="card">
-            <img src="img/foto6.jpg" alt="Озеро Байкал">
+            <img src="img/foto6.jpg" alt="">
             <p>Сагаалган</p>
           </li>
   
@@ -101,7 +101,7 @@
 
     </section>
 
-    <section>
+    <section id="about">
       <h2 id="my-job">Пошив на заказ</h2>
       <ul class="features-list">
         <li class="feature">
@@ -129,11 +129,35 @@
        <button id="btn"> <a href="tel:+79269994389">Связаться со мной</a></button>
     </section>
 
-    <search>
-      <h2>Отзывы</h2>
-    </search>
+    <section id="reviews">
+      <h2 id="my-job">Отзывы</h2>
+      <ul class="reviews-grid">
+        <li class="review-card reveal">
+          <h2 class="review-name">Эльвира</h2>
+          <p class="review-text">
+            Норжима- это мастер от бога! 
+            Общее видение картины, конечного результата дают шикарный результат. 
+            Норжима сшила мне несколько костюмов и все великолепны! 
+            Качество тоже говорит о себе. Швы от фабричных не отличить. 
+            Для себя решила, что лучше буду заказывать у нее, чем покупать в магазине. Цены адекватные. 
+            И вообще ей надо уже свой брэнд создавать
+          </p>
+
+        </li>
+
+        <li class="review-card reveal">
+          <h2 class="review-name">Оюна Геннадьевна</h2>
+          <p class="review-text">Новые платья с шапками очень красиво вписались в общий ансамбль. В них было очень комфортно, не жарко и кожа дышала. И цвета 😍  Спасибо нашей Норжииме!</p>
+        </li>
+
+      </ul>
+    </section>
 
   </main>
+
+  <a href="#top" class="top-link" id="topBtn">
+    <span>↑</span>
+  </a>
 
   <footer class="page-footer">
     <div class="container">
@@ -145,11 +169,7 @@
      
       <p class="copyright">Все права защищены</p>
       <p class="copyright">Политика конфиденциальности</p>
-      <p class="copyright">Информация на сайте не является публичной офертой</p>
-      
     </div>
-    
-
   </footer>
   
   
