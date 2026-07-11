@@ -305,9 +305,14 @@
     line-height: 1.8;
     transition: color 0.2s;
   }
+
+  .phone svg {
+    
+    fill: var(--gold);
+  }
   
   .social-icons a:hover {
-    color: var(--pure-white);
+    color: var(--hover-gold);
   }
   .copyright {
     color: var(--gold);
