@@ -55,14 +55,14 @@
 
 .nav-menu ul{
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   margin: 0;
   padding: 0;
 }
 .nav-menu li {
   list-style: none;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 1px;
 }
 
@@ -179,9 +179,10 @@
   }
 
   .card img {
-    width: 100%;
-    height: 220px;
+    width: 80%;
+    height: 300px;
     object-fit: cover;
+    margin: 0 auto;
   }
   .card p {
     padding: 1rem;
@@ -189,7 +190,7 @@
     text-align: center;
     font-weight: 500;
     color: var(--text-dark);
-    background: white;
+    background: var(--card-bg);
   }
   
   /* Секция преимуществ */
@@ -237,13 +238,25 @@
     color: var(--text-light);
     line-height: 1.4;
   }
-  
+
+  .btn-center {
+    display: block;
+    margin: 2rem auto 0;
+    width: fit-content;
+  }
   /* Отзывы */
   .reviews-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax280px, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .features-list li:last-child {
+    grid-column: 1 / -1;
   }
 
   .review-card {
@@ -253,6 +266,7 @@
     transition: 0.3s;
     border-left: 6px solid var(--gold);
     list-style: none;
+    margin: 0;
   }
 
   .review-card:hover {
@@ -270,38 +284,34 @@
     color: var(--accent);
   }
     /* footer */
-  .page-footer {
+    footer {
     background-color: var(--accent);
     padding: 2rem;
     margin-top: 3rem;
   }
 
-  .container {
+  .footer-content {
     display: flex;
-    max-width: 1200px;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 auto;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
-  .contacts {
-    /* width: 200px; */
-    margin-right: auto;
-    font-size: 10px;
-  }
-  .contacts a{
+
+  .social-icons a{
     text-decoration: none;
     color: var(--gold);
+    font-size: 1.2rem;
     line-height: 1.8;
     transition: color 0.2s;
   }
-  .contacts a:hover {
+  
+  .social-icons a:hover {
     color: var(--pure-white);
   }
   .copyright {
     color: var(--gold);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin: 0;
   }
 
@@ -315,7 +325,7 @@
     width: 30px;
     height: 30px;
     background: var(--gold);
-    color: #fff;
+    color: var(--accent);
     font-size: 23px;
     font-weight: bold;
     border-radius: 50%;
